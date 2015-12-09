@@ -10,13 +10,36 @@ public class Hooks {
 	public static WebDriver driver;
 	public static String cmdDriver;
 
-	@Before
-	public void beforeScenario() {
+	@Before(order = 5)
+	public void before1() {
+		System.out.println("Before order 5");
 		AbstractPage.getDriverFromCMD();
 	}
 
-	@After
-	public void afterScenario() {
-		// System.out.println("after");
+	@Before(order = 10)
+	public void before2() {
+		System.out.println("Before order 10");
 	}
+
+	@After(order = 10)
+	public void after2() {
+		System.out.println("After order 10");
+	}
+
+
+	@After(order = 5)
+	public void after1() {
+		System.out.println("After order 5");
+	}
+
+
 }
+
+// output
+// Before order 5
+// Before order 10
+// Step File
+// After order 10
+// After order 5
+
+// max order = 10000

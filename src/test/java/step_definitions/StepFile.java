@@ -36,4 +36,34 @@ public class StepFile {
 		AbstractPage.closeApplication();
 	}
 
+	@Given("^background text$")
+	public void background_text() throws Throwable {
+		System.out.println("*********Background step file*********");
+	}
+
+	@Then("^test1$")
+	public void test1() throws Throwable {
+		System.out.println("*********step file test 1");
+	}
+
+	@Then("^test2$")
+	public void test2() throws Throwable {
+		System.out.println("*********step file test 2");
+	}
+
+	@Then("^test3$")
+	public void test3() throws Throwable {
+		System.out.println("*********step file test 3");
+	}
+
+	@Then("^test4$")
+	public void test4() throws Throwable {
+		System.out.println("*********step file test 4");
+	}
+
+	@Then("^test5$")
+	public void test5() throws Throwable {
+		System.out.println("*********step file test 5");
+	}
+
 }
