@@ -12,8 +12,8 @@ public class StepFile {
 
 	WebDriver driver;
 	Hooks hooks;
-	YahooHomePage yahooHomePage;
-	YahooSearchPage yahooSearchPage;
+	// YahooHomePage yahooHomePage;
+	// YahooSearchPage yahooSearchPage;
 
 	@Given("^user is on application home page$")
 	public void user_is_on_application_home_page() throws Throwable {

@@ -9,12 +9,13 @@ public class YahooHomePage extends AbstractPage {
 		super(driver);
 	}
 
-	public static YahooSearchPage searchForKeyword(String keyword) {
+	public static void searchForKeyword(String keyword) {
 		sleep(3000);
 		waitForPresenceOfElement(Constants.YAHOOHOME_TEXTBOX);
+		System.out.println("----------------Home Title:" + getTitleName());
 		enterText(Constants.YAHOOHOME_TEXTBOX, keyword);
 		clickElement(Constants.YAHOOHOME_SEARCH_BUTTON);
-		return new YahooSearchPage(driver);
+		// return new YahooSearchPage(driver);
 	}
 
 
