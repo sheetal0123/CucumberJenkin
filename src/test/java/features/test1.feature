@@ -31,6 +31,5 @@ Feature: Test feature file
   #mvn clean test -Dcucumber.options="--tags @san --tags @reg"    | It will run only 2 steps i.e. scenario 3 only (AND case)
   #mvn clean test -Dcucumber.options="--tags @san,reg"    | It will run6 steps i.e. scenario 1,2 and 3 (OR case)
   #mvn clean test -Dcucumber.options="--tags ~@san"    | It will run all cases which are not tagged @san
-  
   Scenario: Test5 description
     Then test5

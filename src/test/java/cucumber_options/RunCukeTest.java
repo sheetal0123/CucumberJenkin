@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
  monochrome = true, dryRun = false,
 		plugin = {
  "pretty",
-		"json:target/jsonreport/report.json",
+		"html:target/htmlreport",
 		}
 		)
 public class RunCukeTest {

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.009" errors="0" skipped="0" tests="5" name="cucumber_options.RunCukeTest">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cucumber_options.RunCukeTest" time="54.534" tests="20" errors="0" skipped="1" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_79\jre\bin"/>
@@ -22,8 +22,7 @@
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_79\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\SHEETA~1\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
@@ -39,12 +38,13 @@
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.7"/>
     <property name="file.encoding" value="Cp1252"/>
+    <property name="cucumeber.options" value="--tag @uat"/>
     <property name="user.name" value="Sheetalsingh"/>
     <property name="java.class.path" value="C:\Users\sheetalsingh\Downloads\apache-maven-3.3.3-bin\apache-maven-3.3.3\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_79\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dcucumeber.options=--tag @uat"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,9 +61,35 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.007" classname="| seleniumhq org |" name="Given user is on application home page"/>
-  <testcase time="0" classname="| seleniumhq org |" name="When user search for &quot;seleniumhq org&quot;"/>
-  <testcase time="0" classname="| seleniumhq org |" name="Then user verify results"/>
-  <testcase time="0" classname="| seleniumhq org |" name="And user close the application"/>
-  <testcase time="0.002" classname="| seleniumhq org |" name="| seleniumhq org |"/>
+  <testcase name="Given background text" classname="Scenario: Test1 description" time="0.003"/>
+  <testcase name="Then test1" classname="Scenario: Test1 description" time="0"/>
+  <testcase name="Scenario: Test1 description" classname="Scenario: Test1 description" time="0.003"/>
+  <testcase name="Given background text" classname="Scenario: Test2 description" time="0"/>
+  <testcase name="Then test2" classname="Scenario: Test2 description" time="0"/>
+  <testcase name="Scenario: Test2 description" classname="Scenario: Test2 description" time="0.003"/>
+  <testcase name="Given background text" classname="Scenario: Test3 description" time="0"/>
+  <testcase name="Then test3" classname="Scenario: Test3 description" time="0.001"/>
+  <testcase name="Scenario: Test3 description" classname="Scenario: Test3 description" time="0.005"/>
+  <testcase name="Given background text" classname="Scenario: Test4 description" time="0"/>
+  <testcase name="Then test4" classname="Scenario: Test4 description" time="0"/>
+  <testcase name="Scenario: Test4 description" classname="Scenario: Test4 description" time="0.007"/>
+  <testcase name="Given background text" classname="Scenario: Test5 description" time="0.001"/>
+  <testcase name="Then test5" classname="Scenario: Test5 description" time="0"/>
+  <testcase name="Scenario: Test5 description" classname="Scenario: Test5 description" time="0.004"/>
+  <testcase name="Given user is on application home page" classname="| seleniumhq org |" time="0.001"/>
+  <testcase name="When user search for &quot;seleniumhq org&quot;" classname="| seleniumhq org |" time="0"/>
+  <testcase name="Then user verify results" classname="| seleniumhq org |" time="0.019">
+    <failure message="Search result is not 10" type="java.lang.AssertionError">java.lang.AssertionError: Search result is not 10
+</failure>
+    <system-out><![CDATA[----------------SRP Title:seleniumhq org - Yahoo India Search Results
+----------------Count:8
+]]></system-out>
+  </testcase>
+  <testcase name="| seleniumhq org |" classname="| seleniumhq org |" time="0.019">
+    <failure message="Search result is not 10" type="java.lang.AssertionError">java.lang.AssertionError: Search result is not 10
+</failure>
+  </testcase>
+  <testcase name="And user close the application" classname="| seleniumhq org |" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>
