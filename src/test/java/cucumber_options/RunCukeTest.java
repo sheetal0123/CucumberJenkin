@@ -16,6 +16,8 @@ import cucumber.api.junit.Cucumber;
 		plugin = {
 				"pretty",
 				"html:target/htmlreport",
+				"json:target/jsonreport/report.json",
+				"junit:target/junitreport/jreport.xml",
 			}
 		)
 public class RunCukeTest {
