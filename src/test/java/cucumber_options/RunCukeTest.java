@@ -13,18 +13,18 @@ import cucumber.api.junit.Cucumber;
 		glue = "step_definitions", 
 		monochrome = true, 
 		dryRun = false,
+		tags = {"~@ignore"},
 		plugin = {
 				"pretty",
-				"html:target/htmlreport",
-				"json:target/jsonreport/report.json",
-				"junit:target/junitreport/jreport.xml",
+				"html:target/site/cucumber-pretty",
+				"json:target/cucumber.json",
 			}
 		)
 public class RunCukeTest {
 
 }
 
+//	"html:target/site/cucumber-pretty",
+//  "junit:target/junitreport.xml",
 
-// "pretty", "html:target/htmlreport"
-// "pretty","json:target/jsonreport/report.json"
-// "pretty","junit:target/junitreport/jreport.xml",
+//pro plugin:   "io.cucumber.pro.JsonReporter12:default",
