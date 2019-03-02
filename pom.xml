@@ -12,6 +12,8 @@
 		<selenium.version>3.141.59</selenium.version>
 		<cucumber.version>1.2.5</cucumber.version>
 		<java.version>1.8</java.version>
+		<junit.version>4.12</junit.version>
+		<cucumberjunit.version>1.2.5</cucumberjunit.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -39,6 +41,21 @@
 			<version>${cucumber.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumberjunit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
 
 		<!-- <dependency> <groupId>io.cucumber</groupId> <artifactId>pro-plugin</artifactId> 
 			<version>3.0.2</version> </dependency> -->
@@ -48,7 +65,7 @@
 	<build>
 		<plugins>
 
-			 <plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
@@ -56,7 +73,7 @@
 					<source>${java.version}</source>
 					<target>${java.version}</target>
 				</configuration>
-			</plugin> 
+			</plugin>
 
 
 			<plugin>
@@ -81,7 +98,7 @@
 				<executions>
 					<execution>
 						<id>execution</id>
-						<phase>verify</phase>
+						<phase>test</phase>
 						<goals>
 							<goal>generate</goal>
 						</goals>

@@ -14,10 +14,9 @@
   
   
   
-  
-  
+   
  
-#reporting
+#Reporting
 1. simple json, html, xml reports are working fine
   
 2. pro plugin report need to try for jenkins - Later
@@ -27,6 +26,7 @@ need to add dependency + cucumber.yml + entry in runcuketest
 3. 3rd party which is generally used
 https://damienfremont.com/2016/05/09/how-to-cucumber-test-report-plugin-2-with-maven-and-java/
 
+report: /target/site/cucumber-reports/feature-overview.html
   
 4. Need to try following trivago as well
 https://github.com/trivago/cluecumber-report-plugin  
