@@ -1,5 +1,12 @@
 #For Cucumber+ WebDriver + Jenkin + Maven Practice
 
+#Cucmber 1.x version | https://mvnrepository.com/artifact/info.cukes
+<groupId>info.cukes</groupId>
+
+#Cucmber 2.x version | https://mvnrepository.com/search?q=io.cucumber
+<groupId>io.cucumber</groupId>
+
+
 
 #How to run
   #mvn clean test -Dcucumber.options="--tags @uat"    | It will run all 10 steps i.e. 5 scenario
@@ -13,19 +20,18 @@
   mvn clean test -Dcucumber.options="--tags @yahoo" -Ddriver=chrome  | It will run with Chrome driver
   
   
-  
+  report: /target/site/cucumber-reports/feature-overview.html
    
  
-#Reporting
+#Reporting)
 1. simple json, html, xml reports are working fine
   
 2. pro plugin report need to try for jenkins - Later
 https://docs.cucumber.io/cucumber/reporting/#third-party-plugins
 need to add dependency + cucumber.yml + entry in runcuketest
   
-3. 3rd party which is generally used
+3. 3rd party which is generally used | working
 https://damienfremont.com/2016/05/09/how-to-cucumber-test-report-plugin-2-with-maven-and-java/
-
 report: /target/site/cucumber-reports/feature-overview.html
   
 4. Need to try following trivago as well

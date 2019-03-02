@@ -10,10 +10,10 @@
 
 	<properties>
 		<selenium.version>3.141.59</selenium.version>
-		<cucumber.version>1.2.5</cucumber.version>
+		<cucumber.version>4.2.4</cucumber.version>
+		<!--<cucumber.version>1.2.5</cucumber.version>-->
 		<java.version>1.8</java.version>
 		<junit.version>4.12</junit.version>
-		<cucumberjunit.version>1.2.5</cucumberjunit.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -23,24 +23,22 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-junit</artifactId>
-			<version>${cucumber.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java8 -->
-		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java8</artifactId>
 			<version>${cucumber.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -48,17 +46,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-junit</artifactId>
-			<version>${cucumberjunit.version}</version>
-			<scope>test</scope>
-		</dependency>
 
-
-		<!-- <dependency> <groupId>io.cucumber</groupId> <artifactId>pro-plugin</artifactId> 
-			<version>3.0.2</version> </dependency> -->
 	</dependencies>
 
 
